@@ -11,10 +11,11 @@ class SplashScreenUi extends StatefulWidget {
 class _SplashScreenUiState extends State<SplashScreenUi> {
   @override
   void initState() {
-    // code relay
+    // code relay  หน่วงหน้าจอ 3 วิ แล้วเปิดไปหน้า ShowAllTaskUi แบบย้อนกลับไมได้
     Future.delayed(
+      //ระยะเวลาหน่วง
       Duration(seconds: 3),
-    // start up
+    // start up สิ่งที่ต้องการทำหลังจากหน่วงเสร็จ
     (){
       Navigator.pushReplacement(
         context,
@@ -30,9 +31,10 @@ class _SplashScreenUiState extends State<SplashScreenUi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 3, 29, 58),
+      backgroundColor: const Color.fromARGB(255, 3, 83, 175),
       body: Stack(
         children: [
+          //ชั้นที่ 1
           Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -45,7 +47,7 @@ class _SplashScreenUiState extends State<SplashScreenUi> {
                 ),
                 SizedBox(height: 25),
                 Text(
-                  ' ☻ TASK ME ☻',
+                  ' ✨✨ TASK ME ✨✨',
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
@@ -59,12 +61,13 @@ class _SplashScreenUiState extends State<SplashScreenUi> {
               ],
             ),
           ),
+          //ชั้นที่ 2
           Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Text(
-                  'Created by Turnray SAU',
+                  'Created by Showman SAU',
                   style: TextStyle(
                     color: Colors.grey[300],
                   ),
