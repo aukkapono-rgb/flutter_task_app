@@ -13,6 +13,7 @@ dependencies:
   google_fonts: ^8.0.2 #ใฃ้ font fonts.google.com
   font_awesome_flutter: ^10.12.0 #ใช้ icon แปลกๆ จากfont awesome.com
   supabase_flutter: ^2.12.0    #ใฃ้ เชื่อมต่อและทำงานกับฐานข้อมูล Supabase
+  image_picker: ^1.2.1  #ใช้เลือกภาพจากแกลเลอรี่ หรือถ่ายภาพด้วยกล้อง
  
 dev_dependencies:
   flutter_test:

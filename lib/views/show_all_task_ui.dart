@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_task_app/views/add_task_ui.dart';
 
 class ShowAllTaskUi extends StatefulWidget {
   const ShowAllTaskUi({super.key});
@@ -23,8 +24,16 @@ class _ShowAllTaskUiState extends State<ShowAllTaskUi> {
           centerTitle: true, //จัดตำแหน่งกลาง
       ),
       //floating ac buttom 
-      floatingActionButton: FloatingActionButton(//สีพื้นหลังของปุ่ม
-        onPressed: (){},//ฟังก์ชันเมื่อกดปุ่ม
+      floatingActionButton: FloatingActionButton(//สีพื้นหลังของปุ่ม  FloatingActionButton
+        onPressed: (){
+          //เปิดไปหน้าจอ AddTaskUi เมื่อกดปุ่ม แบบย้อนกลับได้
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => AddTaskUi(),
+            ),
+          );
+        },//ฟังก์ชันเมื่อกดปุ่ม
         child: Icon(  
           Icons.add,
           color: Colors.white,//สีของไอคอน
